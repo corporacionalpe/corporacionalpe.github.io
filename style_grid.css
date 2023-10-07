@@ -1,0 +1,13 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: justify;
+    padding-left: 93px;
+    padding-right: 80px;
+}
+
+.grid div{
+    background: rgb(255, 255, 255);
+    padding: 1em;
+}

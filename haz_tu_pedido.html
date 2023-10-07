@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporacion ALPE: Haz tu pedido</title>
+    <link rel="stylesheet" href="style_haz_tu_pedido.css">
+    <link rel="stylesheet" href="style_navbar_haz_tu_pedido.css">
+    <link rel="stylesheet" href="style_footer_haz_tu_pedido.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="imagenes/LOGO.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+        </nav>
+        <a href="haz_tu_pedido.html" class="btn"><button>Haz tu pedido</button></a>
+    </header>
+    <br>
+    <br>
+    <div class="form">
+    <form>
+        <div class="contenedor">
+        <h1>Envía la información de su pedido por WhatsApp</h1>
+        <label for="">Nombre</label>
+        <input type="text" class="name">
+        <label for="">Correo</label>
+        <input type="text" class="email">
+        <label for="">Ubicación</label>
+        <input type="text" class="location">
+        <label for="">Descripción del pedido</label>
+        <textarea class="message"></textarea>
+        <br>
+        <button type="button" onclick="sendwhatsapp();">Enviar por WhatsApp</button>
+        </div>
+    </form>
+    </div>
+
+    <script>
+        function sendwhatsapp(){
+            var phonenumber = "+50242913992";
+            var name = document.querySelector('.name').value;
+            var email = document.querySelector('.email').value;
+            var location = document.querySelector('.location').value;
+            var message = document.querySelector('.message').value;
+    
+            var url = "https://wa.me/" + phonenumber + "?text="
+            +"*Nombre :* " +name+"%0a"
+            +"*Correo :* " +email+"%0a"
+            +"*Ubicación :* " +location+"%0a"
+            +"*Descripción del pedido :* " +message+"%0a%0a";
+            window.open(url, '_blank').focus();
+    }
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <section></section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <div class="footer-links">
+                        <h4>Contáctanos</h4>
+                        <div class="social-link">
+                            <a href="https://www.facebook.com/profile.php?id=100088388747465&mibextid=ZbWKwL" target="_blank"><img src="imagenes/Facebook.png" class="fc"></a>
+                            <a href="https://www.instagram.com/corporacion.alpe/" target="_blank"><img src="imagenes/instagram.png" class="ig"></a>
+                            <a href="https://wa.me/50242913992" target="_blank"><img src="imagenes/whatsapp.png" class="wa"></a>
+                            <a href="mailto:corporacion.alpe.4@gmail.com?" target="_blank"><img src="imagenes/gmail.png" class="gm"></a>
+                        </div>
+                        <span class="copyright">&copy;Todos los derechos reservados 2023</span>
+                    <br><br>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </footer>
+</body> 
+</html>

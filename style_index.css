@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Outfit&display=swap');
+*{
+    text-transform: initial;
+    text-align: justify;
+}
+
+.subtitulos{
+    font-size: 100%;
+    text-justify: center;
+}
+
+.texto{
+    font-size: 95%;
+    text-justify: center
+}
+
+.titulo {
+    font-size: 200%;
+    text-justify: center;
+    
+}
+
+.subtitulo{
+    font-size: 170%;
+    text-justify: center;
+    
+}
+
+.empresa{
+    font-size: 150%;
+    text-justify: center;
+   
+}

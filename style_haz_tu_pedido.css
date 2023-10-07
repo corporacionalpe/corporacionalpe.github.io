@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Outfit&display=swap');
+
+*{
+  font-family: 'Outfit', sans-serif;
+  text-transform: initial;
+  text-align: center;
+  margin-left: 60px;
+  padding: 60px;
+}
+
+
+.contenedor {
+  text-align: center; 
+  background-color: #fff;  
+  padding:30px; 
+  border-radius: 5px; 
+}
+
+
+form{
+  margin: 20px 5px;
+  width: 500px;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+}
+
+form h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form label{
+  display: block;
+  margin-bottom: 15px;
+}
+
+form input, form textarea{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background-color: aliceblue;
+  border: none;
+}
+
+form button{
+  background: rgb(255, 205, 25);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+form button:hover{
+  background:rgb(202, 164, 25);
+  transform: scale(1.1);
+}
